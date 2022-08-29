@@ -13,6 +13,27 @@
   }
 }
 
+.back {
+  background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80');
+}
+
+.all {
+  background-image: url('https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -32,6 +53,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
