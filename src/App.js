@@ -9,6 +9,8 @@ import Login from './Pages/Login/Login';
 import Singup from './Pages/Singup/Singup';
 import ForgetPassword from './Pages/ForgetPassword/ForgetPassword';
 import Blog from './Pages/Blog/Blog';
+import SingleProduct from './Pages/SingleProduct/SingleProduct';
+import AddtoCart from './Pages/AddtoCart/AddtoCart';
 function App() {
   return (
     <div >
@@ -21,6 +23,9 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/login" element={<Login />} />
         <Route path="/singup" element={<Singup />} />
+        <Route path="/singleproduct" element={<SingleProduct />} />
+        <Route path="/addtocart" element={<AddtoCart />} />
+
         <Route path="/forgetpassword" element={<ForgetPassword />} />
       </Routes>
 
