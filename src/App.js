@@ -22,6 +22,7 @@ import Labpratory from './Pages/Products/Labpratory';
 import Equipments from './Pages/Products/Equipments';
 import Radiology from './Pages/Products/Radiology';
 import Devices from './Pages/Products/Devices';
+import NotFoundpage from './Pages/NotFoundpage/NotFoundpage';
 function App() {
   return (
     <div >
@@ -62,6 +63,7 @@ function App() {
         <Route path="/mywishlist" element={<MyWishlist />} />
 
         <Route path="/forgetpassword" element={<ForgetPassword />} />
+        <Route path="*" element={<NotFoundpage />} />
       </Routes>
 
 

@@ -70,7 +70,7 @@ const Products = () => {
 
                     <Link to={'labpratory'} className=' border h-[150px] '>
                         <div >
-                            <img className='mx-auto mt-6' src="https://medik.wpengine.com/wp-content/uploads/2020/05/Drugs.png" alt="" />
+                            <img className='mx-auto mt-6' src="https://medik.wpengine.com/wp-content/uploads/2020/05/Laboratory.png" alt="" />
                             <h3 className='text-center'>Labpratory</h3>
                         </div>
                     </Link>
