@@ -63,10 +63,10 @@ const Navbar = () => {
                                 <Link to={'/login'} className='text-gray-800 hover:text-gray-400 duration-500'><RiAccountCircleFill></RiAccountCircleFill></Link>
                             </div>
                             <div className=' text-2xl md:my-0 my-7'>
-                                <Link to={'/login'} className='text-gray-800 hover:text-gray-400 duration-500'><BsCartCheckFill></BsCartCheckFill></Link>
+                                <Link to={'/addtocart'} className='text-gray-800 hover:text-gray-400 duration-500'><BsCartCheckFill></BsCartCheckFill></Link>
                             </div>
                             <div className=' text-2xl md:my-0 my-7'>
-                                <Link to={'/login'} className='text-gray-800 hover:text-gray-400 duration-500'><AiFillHeart></AiFillHeart></Link>
+                                <Link to={'/mywishlist'} className='text-gray-800 hover:text-gray-400 duration-500'><AiFillHeart></AiFillHeart></Link>
                             </div>
                         </div>
                     </div>

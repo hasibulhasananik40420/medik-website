@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Outlet } from "react-router-dom";
 
 const SingleProduct = () => {
     return (
@@ -52,13 +53,54 @@ const SingleProduct = () => {
             </div>
 
 
-            <div className='md:flex justify-center items-center border-b cursor-pointer'>
+            <div >
+                <div className='md:flex justify-center items-center border-b cursor-pointer'>
 
-                <div className='text-xl border p-4 hover:text-[#076cec]'>Product Description</div>
-                <div className='text-xl border p-4 hover:text-[#076cec]'>Review</div>
-                <div className='text-xl border p-4 hover:text-[#076cec]'>Shipping Details</div>
+                    <Link to={''} className='text-xl border p-4 hover:text-[#076cec]'>Product Description</Link>
+                    <Link to={'review'} className='text-xl border p-4 hover:text-[#076cec]'>Review</Link>
+                    <Link to={'shippingdetail'} className='text-xl border p-4 hover:text-[#076cec]'>Shipping Details</Link>
+
+                </div>
+
+                <div className=' mt-6 mx-24'>
+                    <Outlet />
+                </div>
 
             </div>
+
+
+
+
+
+            {/* outlet */}
+
+            {/* <div className="">
+                <div className='lg:max-w-7xl md-w-full  mt-8 mx-auto px-2 text  md:px-16 '>
+                    <div className="w-3/4 mt-4 ">
+
+                        <Link to={''} className='p-2 font-bold min-w-max rounded-md bg-[#D9F5FF]  hover:bg-[#515FCE] hover:text-white'>
+                            Product Description
+                        </Link>
+                        <Link to={'curriculum'} className='p-2 font-bold min-w-max rounded-md bg-[#D9F5FF]  hover:bg-[#515FCE] hover:text-white'>
+                            Review
+                        </Link>
+                        <Link to={'instractor'} className='p-2 font-bold min-w-max rounded-md bg-[#D9F5FF]  hover:bg-[#515FCE] hover:text-white'>
+                            Shipping Details
+                        </Link>
+
+                    </div>
+
+
+                    <div className=' mt-4'>
+                        <Outlet />
+                    </div>
+
+                </div>
+
+            </div> */}
+
+
+
 
 
 

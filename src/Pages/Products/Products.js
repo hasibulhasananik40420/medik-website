@@ -1,8 +1,46 @@
 import React from 'react';
-import { BsCartCheckFill, BsEyeFill } from 'react-icons/bs';
-import { AiFillHeart } from 'react-icons/ai';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { Link, Outlet } from 'react-router-dom';
 
 const Products = () => {
+
+    let settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
     return (
         <div>
 
@@ -10,185 +48,71 @@ const Products = () => {
             <p className='mt-4 text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 mb-12 mx-12'>
 
-                <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-100 sm:p-28 py-36 px-10 flex justify-center items-center border hover:border hover:border-blue-400">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/C2cw7fb/5-15-removebg-preview.png" alt="sofa-2" />
 
-                    <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-2xl font-semibold leading-5 ">Sanitizer Gel</p>
+
+
+            <div className='w-3/4 mx-auto mt-8 border  cursor-pointer'>
+
+                <Slider {...settings}>
+                    <Link to={''} className='border h-[150px]'>
+                        <div >
+                            <img className='mx-auto mt-6' src="https://medik.wpengine.com/wp-content/uploads/2020/05/Medication.png" alt="" />
+                            <h3 className='text-center font-medium'>Medication</h3>
                         </div>
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-xl font-bold leading-5  ">$60.00</p>
+                    </Link>
+                    <Link to={'drugs'} className=' border rounded-r-none h-[150px] '>
+                        <div >
+                            <img className='mx-auto mt-6' src="https://medik.wpengine.com/wp-content/uploads/2020/05/Drugs.png" alt="" />
+                            <h3 className='text-center'>Drugs</h3>
                         </div>
-                    </div>
-                    <div class="group-hover:opacity-60 transition duration-500 absolute bottom-8 right-8 flex justify-start items-start flex-row space-x-2">
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                    </div>
-                    <div class="flex flex-col bottom-8 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
-                        <button>
+                    </Link>
 
-                            <BsCartCheckFill className='w-8 h-8'></BsCartCheckFill>
-                        </button>
-                        <button>
-
-                            <BsEyeFill className='w-8 h-8'></BsEyeFill>
-                        </button>
-                        <button>
-                            <AiFillHeart className='w-8 h-8'></AiFillHeart>
-                        </button>
-                    </div>
-                </div> <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-100 sm:p-28 py-36 px-10 flex justify-center items-center border">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/C2cw7fb/5-15-removebg-preview.png" alt="sofa-2" />
-
-                    <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-2xl font-semibold leading-5 ">Sanitizer Gel</p>
+                    <Link to={'labpratory'} className=' border h-[150px] '>
+                        <div >
+                            <img className='mx-auto mt-6' src="https://medik.wpengine.com/wp-content/uploads/2020/05/Drugs.png" alt="" />
+                            <h3 className='text-center'>Labpratory</h3>
                         </div>
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-xl font-bold leading-5  ">$60.00</p>
+                    </Link>
+                    <Link to={'equipments'} className=' border h-[150px] '>
+                        <div >
+                            <img className='mx-auto mt-6' src="https://medik.wpengine.com/wp-content/uploads/2020/05/Equipments.png" alt="" />
+                            <h3 className='text-center'>Equipments</h3>
                         </div>
-                    </div>
-                    <div class="group-hover:opacity-60 transition duration-500 absolute bottom-8 right-8 flex justify-start items-start flex-row space-x-2">
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                    </div>
-                    <div class="flex flex-col bottom-8 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
-                        <button>
-
-                            <BsCartCheckFill className='w-8 h-8'></BsCartCheckFill>
-                        </button>
-                        <button>
-
-                            <BsEyeFill className='w-8 h-8'></BsEyeFill>
-                        </button>
-                        <button>
-                            <AiFillHeart className='w-8 h-8'></AiFillHeart>
-                        </button>
-                    </div>
-                </div> <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-100 sm:p-28 py-36 px-10 flex justify-center items-center border">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/C2cw7fb/5-15-removebg-preview.png" alt="sofa-2" />
-
-                    <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-2xl font-semibold leading-5 ">Sanitizer Gel</p>
+                    </Link>
+                    <Link to={'Radiology'} className=' border h-[150px] '>
+                        <div >
+                            <img className='mx-auto mt-6' src="https://medik.wpengine.com/wp-content/uploads/2020/05/Radiology.png" alt="" />
+                            <h3 className='text-center'>Radiology</h3>
                         </div>
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-xl font-bold leading-5  ">$60.00</p>
+                    </Link>
+
+                    <Link to={'devices'} className=' border h-[150px]  '>
+                        <div >
+                            <img className='mx-auto mt-6' src="https://medik.wpengine.com/wp-content/uploads/2020/05/Devices.png" alt="" />
+                            <h3 className='text-center'>Devices</h3>
                         </div>
-                    </div>
-                    <div class="group-hover:opacity-60 transition duration-500 absolute bottom-8 right-8 flex justify-start items-start flex-row space-x-2">
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                    </div>
-                    <div class="flex flex-col bottom-8 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
-                        <button>
+                    </Link>
 
-                            <BsCartCheckFill className='w-8 h-8'></BsCartCheckFill>
-                        </button>
-                        <button>
-
-                            <BsEyeFill className='w-8 h-8'></BsEyeFill>
-                        </button>
-                        <button>
-                            <AiFillHeart className='w-8 h-8'></AiFillHeart>
-                        </button>
-                    </div>
-                </div> <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-100 sm:p-28 py-36 px-10 flex justify-center items-center border">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/C2cw7fb/5-15-removebg-preview.png" alt="sofa-2" />
-
-                    <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-2xl font-semibold leading-5 ">Sanitizer Gel</p>
-                        </div>
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-xl font-bold leading-5  ">$60.00</p>
-                        </div>
-                    </div>
-                    <div class="group-hover:opacity-60 transition duration-500 absolute bottom-8 right-8 flex justify-start items-start flex-row space-x-2">
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                    </div>
-                    <div class="flex flex-col bottom-8 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
-                        <button>
-
-                            <BsCartCheckFill className='w-8 h-8'></BsCartCheckFill>
-                        </button>
-                        <button>
-
-                            <BsEyeFill className='w-8 h-8'></BsEyeFill>
-                        </button>
-                        <button>
-                            <AiFillHeart className='w-8 h-8'></AiFillHeart>
-                        </button>
-                    </div>
-                </div> <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-100 sm:p-28 py-36 px-10 flex justify-center items-center border">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/C2cw7fb/5-15-removebg-preview.png" alt="sofa-2" />
-
-                    <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-2xl font-semibold leading-5 ">Sanitizer Gel</p>
-                        </div>
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-xl font-bold leading-5  ">$60.00</p>
-                        </div>
-                    </div>
-                    <div class="group-hover:opacity-60 transition duration-500 absolute bottom-8 right-8 flex justify-start items-start flex-row space-x-2">
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                    </div>
-                    <div class="flex flex-col bottom-8 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
-                        <button>
-
-                            <BsCartCheckFill className='w-8 h-8'></BsCartCheckFill>
-                        </button>
-                        <button>
-
-                            <BsEyeFill className='w-8 h-8'></BsEyeFill>
-                        </button>
-                        <button>
-                            <AiFillHeart className='w-8 h-8'></AiFillHeart>
-                        </button>
-                    </div>
-                </div> <div class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-100 sm:p-28 py-36 px-10 flex justify-center items-center border">
-                    <img class="group-hover:opacity-60 transition duration-500" src="https://i.ibb.co/C2cw7fb/5-15-removebg-preview.png" alt="sofa-2" />
-
-                    <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-2xl font-semibold leading-5 ">Sanitizer Gel</p>
-                        </div>
-                        <div>
-                            <p class="group-hover:opacity-60 transition duration-500 text-xl font-bold leading-5  ">$60.00</p>
-                        </div>
-                    </div>
-                    <div class="group-hover:opacity-60 transition duration-500 absolute bottom-8 right-8 flex justify-start items-start flex-row space-x-2">
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                        <button class="bg-white border rounded-full focus:bg-gray-800 border-gray-600 p-1.5"></button>
-                    </div>
-                    <div class="flex flex-col bottom-8 left-8 space-y-4 absolute opacity-0 group-hover:opacity-100 transition duration-500">
-                        <button>
-
-                            <BsCartCheckFill className='w-8 h-8'></BsCartCheckFill>
-                        </button>
-                        <button>
-
-                            <BsEyeFill className='w-8 h-8'></BsEyeFill>
-                        </button>
-                        <button>
-                            <AiFillHeart className='w-8 h-8'></AiFillHeart>
-                        </button>
-                    </div>
-                </div>
-
-
-
-
-
-
-
+                </Slider>
             </div>
+
+            <div className='mt-12'>
+                <Outlet />
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
