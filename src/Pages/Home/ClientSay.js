@@ -10,10 +10,10 @@ const ClientSay = () => {
 
 
             <div className='relative'>
-                <FaAngleLeft className='absolute  left-[310px] top-28 w-12 h-12 rounded-md bg-[#0693e3] text-white'></FaAngleLeft>
+                <FaAngleLeft className='absolute left-[310px] top-28 w-12 h-12 rounded-md bg-[#0693e3] text-white'></FaAngleLeft>
 
-                <FaAngleRight className='absolute  right-[310px] top-28 w-12 h-12 rounded-md bg-[#0693e3] text-white'></FaAngleRight>
-                <div className='bg-white w-2/4 rounded-lg mx-auto mt-12'>
+                <FaAngleRight className='absolute right-[310px] top-28 w-12 h-12 rounded-md bg-[#0693e3] text-white'></FaAngleRight>
+                <div className='bg-white md:w-2/4 w-full rounded-lg mx-auto mt-12'>
 
 
 

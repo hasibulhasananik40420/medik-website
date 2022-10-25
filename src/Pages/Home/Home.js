@@ -1,22 +1,19 @@
 import React from 'react';
-import Products from '../Products/Products';
 import ClientSay from './ClientSay';
 import FooterTop from './FooterTop';
 import Header from './Header';
-import HomeAdd from './HomeAdd';
+import HeaderCaed from './HeaderCaed';
 import LatestNews from './LatestNews';
 import Newsletter from './Newsletter';
-import Showpage from './Showpage';
 
 const Home = () => {
     return (
         <div>
             <Header></Header>
-            <HomeAdd></HomeAdd>
-            <Products></Products>
-            <ClientSay></ClientSay>
+            <HeaderCaed></HeaderCaed>
+            {/* <ClientSay></ClientSay> */}
             <LatestNews></LatestNews>
-            <Showpage></Showpage>
+            {/* <Showpage></Showpage> */}
             <Newsletter></Newsletter>
             <FooterTop></FooterTop>
 

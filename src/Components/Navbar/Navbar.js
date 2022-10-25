@@ -1,80 +1,86 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import { GrClose } from 'react-icons/gr'
-import { AiOutlineMenu, AiFillHeart } from 'react-icons/ai'
-import { RiAccountCircleFill } from 'react-icons/ri'
-import { BsCartCheckFill } from 'react-icons/bs'
+import { BiMenuAltLeft } from 'react-icons/bi';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../Firebase.init';
+import { signOut } from 'firebase/auth';
+
+
+
+
 const Navbar = () => {
     const [open, setOpen] = useState(false)
+    const [user] = useAuthState(auth)
+    const handleSingOut = () => {
+        signOut(auth)
+    }
 
     return (
-        <div className='bg-white py-2'>
-            <nav className='md:px-24 px-4 lg:max-w-7xl  md-w-full mx-auto  sticky top-0 z-10 '>
-                <div className='w-full sticky'>
-                    <div className='flex justify-between items-center'>
-                        <div className='md:flex items-center'>
-                            <div className='font-bold text-2xl cursor-pointer flex items-start 
-  text-gray-800'>
-                                <Link to={'/'} > <img className='md:w-28 w-16 h-[60px]' src="https://medik.wpengine.com/wp-content/themes/medik/images/logo.png" alt="" /></Link>
-                            </div>
 
-                            <div onClick={() => setOpen(!open)} className='text-3xl absolute right-2 top-4 cursor-pointer md:hidden'>
-                                {open ? <GrClose className='h-5 w-5' /> : <AiOutlineMenu className='h-6 w-6' />}
-                            </div>
+        <div>
+            <div className='shadow-md w-full fixed top-0 left-0 z-20'>
+                <div className='md:flex items-center justify-between bg-[#eefff7] text-[#171c26] py-4 md:px-10 px-7'>
+                    <div className=' font-bold text-2xl cursor-pointer font-[Poppins] 
+text-white'>
+                        <span className='flex items-center text-2xl  text-[#009e66] mr-1 pt-2'>
 
-                            <ul onClick={() => setOpen(!open)} className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static lg:bg-white md:bg-white bg-red-600  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${open ? 'top-16 ' : 'top-[-650px]'}`}>
-                                <li className='md:ml-8 text-xl md:my-0 my-7'>
-                                    <Link to={'/'} className='text-gray-800 hover:text-gray-400 duration-500'>Home</Link>
-                                </li>
+                            <Link to={'/'} > <img className='md:w-28 w-16 h-[30px]' src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2022/03/home-3-Logo2.png" alt="" /></Link>
 
-
-                                <li className='md:ml-8 text-xl md:my-0 my-7'>
-                                    <Link to={'/about'} className='text-gray-800 hover:text-gray-400 duration-500'>About</Link>
-                                </li>
-
-                                <li className='md:ml-8 text-xl md:my-0 my-7'>
-                                    <Link to={'/blog'} className='text-gray-800 hover:text-gray-400 duration-500'>Blog</Link>
-                                </li>
-                                <li className='md:ml-8 text-xl md:my-0 my-7'>
-                                    <Link to={'/contact'} className='text-gray-800 hover:text-gray-400 duration-500'>Contact</Link>
-                                </li>
-                                <li className='md:ml-8 text-xl md:my-0 my-7'>
-                                    <Link to={'/collection'} className='text-gray-800 hover:text-gray-400 duration-500'>Collection</Link>
-                                </li>
-                                <li className='md:ml-8 text-xl md:my-0 my-7'>
-                                    <Link to={'/Shop'} className='text-gray-800 hover:text-gray-400 duration-500'>Shop
-
-                                        Shop
-                                    </Link>
-                                </li>
+                        </span>
 
 
 
+                    </div>
 
-
-
-                            </ul>
-
-
-                        </div>
-
-                        <div className='flex gap-3 md:mr-0 mr-24'>
-                            <div className='text-2xl md:my-0 my-7'>
-                                <Link to={'/login'} className='text-gray-800 hover:text-gray-400 duration-500'><RiAccountCircleFill></RiAccountCircleFill></Link>
-                            </div>
-                            <div className=' text-2xl md:my-0 my-7'>
-                                <Link to={'/addtocart'} className='text-gray-800 hover:text-gray-400 duration-500'><BsCartCheckFill></BsCartCheckFill></Link>
-                            </div>
-                            <div className=' text-2xl md:my-0 my-7'>
-                                <Link to={'/mywishlist'} className='text-gray-800 hover:text-gray-400 duration-500'><AiFillHeart></AiFillHeart></Link>
-                            </div>
-                        </div>
+                    <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+                        <BiMenuAltLeft name={open ? 'close' : 'menu'}></BiMenuAltLeft>
                     </div>
 
 
+
+                    <ul onClick={() => setOpen(!open)} className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#00459e] md:bg-[#eefff7] md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-16 ' : 'top-[-490px]'}`}>
+
+
+                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
+                            <Link to='/' className='  md:border-0 hover:text-gray-400 duration-500'>Home</Link>
+                        </li>
+
+                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
+                            <Link to='/appointment' className=' hover:text-gray-400 duration-500'>Appointment</Link>
+                        </li>
+
+                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
+                            <Link to='/about' className=' hover:text-gray-400 duration-500'>About</Link>
+                        </li>
+
+
+
+
+
+                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
+                            <Link to='/blog' className=' hover:text-gray-400 duration-500'>Blog</Link>
+                        </li>
+                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
+                            <Link to='/contact' className=' hover:text-gray-400 duration-500'>Contact</Link>
+                        </li>
+
+                        {
+                            user ? <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
+                                <button onClick={handleSingOut} className=' hover:text-gray-400 duration-500'>Singout</button>
+                            </li> :
+                                <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
+                                    <Link to='/login' className=' hover:text-gray-400 duration-500'>Login</Link>
+                                </li>
+
+                        }
+
+
+
+                    </ul>
                 </div>
-            </nav>
+            </div>
         </div>
+
     );
 };
 

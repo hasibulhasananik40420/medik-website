@@ -1,25 +1,30 @@
 import React from 'react';
-import masks from '../../images/istockphoto-1205786368-170667a-removebg-preview.png'
+
 const Header = () => {
     return (
-        <div className='bg-[#35c7df]'>
-            <div className=' h-[90vh] mx-12 flex justify-between'>
+        <div>
+            <div className='bg-gray-50'>
+                <div className='lg:ml-20 ml-8'>
+
+                    <div className='lg:flex lg:justify-between gap-8 pt-24 '>
+                        <div className='lg:w-2/4'>
+                            <h1 className='lg:text-6xl text-2xl font-semibold'>Eye Care Services </h1>
+                            <h1 className='lg:text-6xl text-2xl mt-2'>That You <span className='text-[#5ab88a]'>Can Trust</span></h1>
+                            <p className='mt-6 text-gray-500'>It is a long established fact that a reader will be distracted by the </p>
+                            <p className='text-gray-500'>readable content of a page when looking at its .</p>
+
+                            <button className='bg-[#5ab88a] px-6 py-3 text-white font-semibold rounded mt-8 hover:bg-[#171c26] duration-300 hover:scale-105'>Get Appointment</button>
 
 
-                <div>
-                    <h1 className='text-3xl font-medium font-sans pt-36 pb-8'>Safety Masks</h1>
-                    <h1><span className='text-5xl font-semibold text-white '>15% of.</span> <span className='text-5xl font-semibold text-gray-800 font-serif'>Hurry</span> </h1>
-                    <div className='mt-6 text-xl font-sans text-white'>
-                        <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                        <span className=''>Lorem ipsum dolor sit amet consectetur. </span>
+
+                        </div>
+
+                        <div className='lg:w-2/4 bg-[#5ab88a] rounded-md mt-16 lg:mt-0'>
+                            <img className='mt-[-40px]' src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/revslider/eye-care/ey-01.png" alt="" />
+                        </div>
                     </div>
 
-                    <button className='px-8 py-3 mt-8 bg-white text-black rounded-sm font-semibold hover:bg-[#076cec] hover:text-white'>Start from $0.99</button>
                 </div>
-                <div>
-                    <img className='w-[600px] h-[600px]' src={masks} alt="" />
-                </div>
-
             </div>
         </div>
     );
