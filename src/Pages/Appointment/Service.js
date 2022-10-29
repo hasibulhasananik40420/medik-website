@@ -12,14 +12,72 @@ import {
 import React from 'react';
 import { Input } from '@chakra-ui/react'
 import { format } from 'date-fns';
-const Service = ({ service, date }) => {
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../Firebase.init';
+import Swal from 'sweetalert2'
+import { useState } from 'react';
+
+
+
+const Service = ({ service, date, refetch }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const { name, slots } = service
+    const { name, slots, _id, price } = service
+
+    const [user, loading, error] = useAuthState(auth)
+    const [modal, setModal] = useState(null)
 
     const handleBooking = (e) => {
         e.preventDefault()
         const slot = e.target.slot.value
-        console.log(slot)
+
+        const formatedDate = format(date, 'PP')
+
+        const booking = {
+            treatmentId: _id,
+            treatment: name,
+            date: formatedDate,
+            slot,
+            price,
+            patient: user.email,
+            patientName: user?.displayName,
+            phone: e.target.phone.value
+        }
+
+        fetch('http://localhost:5000/booking', {
+            method: 'POST',
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(booking)
+
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+
+                if (data.success) {
+                    Swal.fire({
+                        position: 'top-center',
+                        icon: 'success',
+                        title: `Appoitnment is set ,${formatedDate} at ${slot}`,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+                else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: `Already hav an Appoitnment on ,${data.booking?.date} at ${data.booking?.slot}`,
+                    })
+                }
+
+                // refetch()
+                setModal(null)
+
+            })
+
+
     }
 
     return (
@@ -52,10 +110,10 @@ const Service = ({ service, date }) => {
                                 {slots.map(slot => <option value={slot}>{slot}</option>)}
                             </Select>
 
-                            <Input type='text' name='name' placeholder='Your name' size='md' />
-                            <Input type='email' name='email' placeholder='Your email' size='md' />
-                            <Input type='number' name='price' placeholder='Price' size='md' />
-                            <Input type='number' name='number' placeholder='Your Number' size='md' />
+                            <Input type='text' name='name' value={user.displayName || ''} placeholder='Your name' size='md' />
+                            <Input type='email' name='email' value={user.email || ''} placeholder='Your email' size='md' />
+                            <Input type='number' name='price' value={price} placeholder='Price' size='md' />
+                            <Input type='number' name='phone' placeholder='Your Number' size='md' />
                             <Input className='bg-[#5ab88a] font-bold' type='submit' value='Submit' size='md' />
 
                         </form>

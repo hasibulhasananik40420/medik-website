@@ -1,4 +1,5 @@
 import React from 'react';
+import CareService from './CareService';
 import ClientSay from './ClientSay';
 import FooterTop from './FooterTop';
 import Header from './Header';
@@ -11,9 +12,8 @@ const Home = () => {
         <div>
             <Header></Header>
             <HeaderCaed></HeaderCaed>
-            {/* <ClientSay></ClientSay> */}
+            <CareService></CareService>
             <LatestNews></LatestNews>
-            {/* <Showpage></Showpage> */}
             <Newsletter></Newsletter>
             <FooterTop></FooterTop>
 

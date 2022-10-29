@@ -12,6 +12,7 @@ import Blog from './Pages/Blog/Blog';
 import NotFoundpage from './Pages/NotFoundpage/NotFoundpage';
 import Contact from './Pages/Contact/Contact';
 import Appointment from './Pages/Appointment/Appointment';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
 function App() {
   return (
     <div className='mt-16'>
@@ -28,7 +29,7 @@ function App() {
 
 
         <Route path="/about" element={<About />} />
-        <Route path="/appointment" element={<Appointment />} />
+        <Route path="/appointment" element={<RequireAuth><Appointment /></RequireAuth>} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
