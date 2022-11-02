@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeaderCaed = () => {
     return (
-        <div className='mx-8'>
+        <div className='mx-8 bg-white mt-[-50px] relative'>
 
             <div className='shadow-lg rounded pb-8'>
 
@@ -36,7 +36,7 @@ const HeaderCaed = () => {
                             <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2022/03/Mask-group-1.png" alt="" />
                         </div>
 
-                        <h1 className='text-3xl text-[#171c26] mt-4'>Qualified Doctors</h1>
+                        <h1 className='text-3xl text-[#171c26] mt-4'>Work Improvements</h1>
                         <p className='text-[#6e7990] mt-4'>Many desktop publishing packages and web page editors now use Lorem Ipsum.</p>
 
                         <button className='text-[#5ab88a] font-semibold mt-6'>Read more + </button>
@@ -47,7 +47,7 @@ const HeaderCaed = () => {
                             <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2022/03/Mask-group-2.png" alt="" />
                         </div>
 
-                        <h1 className='text-3xl text-[#171c26] mt-4'>Qualified Doctors</h1>
+                        <h1 className='text-3xl text-[#171c26] mt-4'>Restoring Confidence</h1>
                         <p className='text-[#6e7990] mt-4'>Many desktop publishing packages and web page editors now use Lorem Ipsum.</p>
 
                         <button className='text-[#5ab88a] font-semibold mt-6'>Read more + </button>

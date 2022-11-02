@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <div>
-            <div className='bg-gray-50'>
+            <div className='bg-gray-50 relative'>
                 <div className='lg:ml-20 ml-8'>
 
                     <div className='lg:flex lg:justify-between gap-8 pt-24 '>

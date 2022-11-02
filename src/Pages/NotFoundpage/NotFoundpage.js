@@ -6,6 +6,7 @@ import { MdContactPage, MdContactPhone, MdImportContacts } from 'react-icons/md'
 const NotFoundpage = () => {
     return (
         <div>
+            {/* <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2022/03/Group-6.png" alt="" /> */}
             <div class="flex items-center justify-center min-h-screen bg-white py-6">
                 <div class="flex flex-col">
                     <span class="text-center font-bold my-10 opacity-30">

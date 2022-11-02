@@ -141,14 +141,14 @@ const Singup = () => {
                     {errorMessage}
 
                     <button
-                        className="transform rounded-sm bg-[#5ab88a] py-2 font-bold duration-300 hover:bg-indigo-400"
+                        className="text-white transform rounded-sm bg-[#5ab88a] py-2 font-bold duration-300 hover:bg-indigo-400"
                     >
                         LOG IN
                     </button>
                     <button onClick={() => signInWithGoogle()}
-                        className="transform rounded-sm bg-[#5ab88a] py-2 font-bold duration-300 hover:bg-indigo-400"
+                        className="flex justify-center items-center gap-3 text-white transform rounded-sm bg-[#5ab88a] py-2 font-bold duration-300 hover:bg-indigo-400"
                     >
-                        Continue with google
+                        <span><img className='w-6' src="https://cdn-icons-png.flaticon.com/128/281/281764.png" alt="" /></span> <span> Continue with google</span>
                     </button>
 
 
