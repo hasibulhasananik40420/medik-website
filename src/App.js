@@ -13,6 +13,12 @@ import NotFoundpage from './Pages/NotFoundpage/NotFoundpage';
 import Contact from './Pages/Contact/Contact';
 import Appointment from './Pages/Appointment/Appointment';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
+import DashBoard from './Pages/DashBoard/DashBoard';
+import MyAppointment from './Pages/DashBoard/MyAppointment';
+import MyReviews from './Pages/DashBoard/MyReviews';
+import AllUsers from './Pages/DashBoard/AllUsers';
+import AddDocters from './Pages/DashBoard/AddDocters';
+import ManageDocter from './Pages/DashBoard/ManageDocter';
 function App() {
   return (
     <div className='mt-16'>
@@ -36,7 +42,15 @@ function App() {
         <Route path="/singup" element={<Singup />} />
 
 
+        <Route path='/dashboard' element={<RequireAuth><DashBoard /></RequireAuth>}>
+          <Route index element={<MyAppointment />}></Route>
+          <Route path='review' element={<MyReviews />}></Route>
+          <Route path='allusers' element={<AllUsers />}></Route>
+          <Route path='adddocter' element={<AddDocters />}></Route>
+          <Route path='managedocter' element={<ManageDocter />}></Route>
 
+
+        </Route>
 
 
 

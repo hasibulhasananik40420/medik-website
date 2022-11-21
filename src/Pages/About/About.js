@@ -7,6 +7,9 @@ import {
     AccordionIcon,
 } from '@chakra-ui/react'
 // import { Box } from 'react-icons/bs';
+
+import { FaFacebookF } from 'react-icons/fa';
+import { AiOutlineGoogle, AiOutlineTwitter } from 'react-icons/ai';
 import { Box } from '@chakra-ui/react'
 
 const About = () => {
@@ -29,7 +32,7 @@ const About = () => {
                                 <p class="mt-6 text-gray-600">Unpacked reserved sir offering bed judgment may and quitting speaking. Is do be improved raptures offering required in replying raillery. Stairs ladies friend by in mutual an no. Mr hence chief he cause. Whole no doors on hoped. Mile tell if help they ye full name</p>
                                 <p class="mt-4 text-gray-600"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm consequat.</p>
 
-                                <button className='px-4 py-3 rounded bg-blue-500 text-white font-medium mt-24'>View Help</button>
+                                <button className='px-4 py-3 rounded bg-blue-500 text-white font-medium mt-12'>View Help</button>
                             </div>
 
 
@@ -246,7 +249,7 @@ const About = () => {
                         </h1>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
+                        {/* <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                             <div class="mb-8">
                                 <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
                             </div>
@@ -254,7 +257,120 @@ const About = () => {
                                 <p class="text-xl text-white font-bold mb-2">Dany Bailey</p>
                                 <p class="text-base text-gray-400 font-normal">Software Engineer</p>
                             </div>
+                        </div> */}
+
+                        <div className="single-team">
+                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <div className="team-text">
+                                <h3>Hasibul Hasan</h3>
+                                <p>Gynecologist </p>
+                                <div className="flex gap-3 justify-center mt-4">
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
+
+                                </div>
+                            </div>
+                        </div> <div className="single-team">
+                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <div className="team-text">
+                                <h3>Hasibul Hasan</h3>
+                                <p>Gynecologist </p>
+                                <div className="flex gap-3 justify-center mt-4">
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
+
+                                </div>
+                            </div>
+                        </div> <div className="single-team">
+                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <div className="team-text">
+                                <h3>Hasibul Hasan</h3>
+                                <p>Gynecologist </p>
+                                <div className="flex gap-3 justify-center mt-4">
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
+
+                                </div>
+                            </div>
+                        </div> <div className="single-team">
+                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <div className="team-text">
+                                <h3>Hasibul Hasan</h3>
+                                <p>Gynecologist </p>
+                                <div className="flex gap-3 justify-center mt-4">
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
+
+                                </div>
+                            </div>
+                        </div> <div className="single-team">
+                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <div className="team-text">
+                                <h3>Hasibul Hasan</h3>
+                                <p>Gynecologist </p>
+                                <div className="flex gap-3 justify-center mt-4">
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
+
+                                </div>
+                            </div>
+                        </div> <div className="single-team">
+                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <div className="team-text">
+                                <h3>Hasibul Hasan</h3>
+                                <p>Gynecologist </p>
+                                <div className="flex gap-3 justify-center mt-4">
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
+
+                                </div>
+                            </div>
+                        </div> <div className="single-team">
+                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <div className="team-text">
+                                <h3>Hasibul Hasan</h3>
+                                <p>Gynecologist </p>
+                                <div className="flex gap-3 justify-center mt-4">
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
+
+                                </div>
+                            </div>
+                        </div> <div className="single-team">
+                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <div className="team-text">
+                                <h3>Hasibul Hasan</h3>
+                                <p>Gynecologist </p>
+                                <div className="flex gap-3 justify-center mt-4">
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
+
+                                </div>
+                            </div>
+                        </div> <div className="single-team">
+                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <div className="team-text">
+                                <h3>Hasibul Hasan</h3>
+                                <p>Gynecologist </p>
+                                <div className="flex gap-3 justify-center mt-4">
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
+
+                                </div>
+                            </div>
                         </div>
+
+
+                        {/* 
                         <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
                             <div class="mb-8">
                                 <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
@@ -299,7 +415,7 @@ const About = () => {
                                 <p class="text-xl text-white font-bold mb-2">Jade Bradley</p>
                                 <p class="text-base text-gray-400 font-normal">Dev Ops</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
             </div>

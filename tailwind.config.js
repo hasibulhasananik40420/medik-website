@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'san': ['Poppins', 'sans-serif'],
       'mons': ['Montserrat', 'sans-serif'],
+      'montons': ['Shalimar', 'cursive']
     },
   },
   plugins: [],

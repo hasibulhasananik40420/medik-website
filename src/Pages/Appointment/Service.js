@@ -19,12 +19,12 @@ import { useState } from 'react';
 
 
 
-const Service = ({ service, date, refetch }) => {
+const Service = ({ service, date, refetch, }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const { name, slots, _id, price } = service
 
     const [user, loading, error] = useAuthState(auth)
-    const [modal, setModal] = useState(null)
+    const [modal, SetModal] = useState(null)
 
     const handleBooking = (e) => {
         e.preventDefault()
@@ -56,12 +56,17 @@ const Service = ({ service, date, refetch }) => {
                 console.log(data);
 
                 if (data.success) {
+                    // Swal.fire({
+                    //     position: 'top-center',
+                    //     icon: 'success',
+                    //     title: `Appoitnment is set ,${formatedDate} at ${slot}`,
+                    //     showConfirmButton: false,
+                    //     timer: 2000
+                    // })
+
                     Swal.fire({
-                        position: 'top-center',
                         icon: 'success',
                         title: `Appoitnment is set ,${formatedDate} at ${slot}`,
-                        showConfirmButton: false,
-                        timer: 1500
                     })
                 }
                 else {
@@ -72,8 +77,8 @@ const Service = ({ service, date, refetch }) => {
                     })
                 }
 
-                // refetch()
-                setModal(null)
+                refetch()
+                SetModal(null)
 
             })
 
@@ -114,7 +119,8 @@ const Service = ({ service, date, refetch }) => {
                             <Input type='email' name='email' value={user.email || ''} placeholder='Your email' size='md' />
                             <Input type='number' name='price' value={price} placeholder='Price' size='md' />
                             <Input type='number' name='phone' placeholder='Your Number' size='md' />
-                            <Input className='bg-[#5ab88a] font-bold' type='submit' value='Submit' size='md' />
+                            {/* <Input className='bg-[#5ab88a] font-bold' type='submit' value='Submit' size='md' /> */}
+                            <button className='bg-[#5ab88a] py-2 rounded font-semibold text-white'>Submit</button>
 
                         </form>
 

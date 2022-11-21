@@ -17,7 +17,6 @@ const Home = () => {
             <Testmonial></Testmonial>
             <Teammeet></Teammeet>
             <LatestNews></LatestNews>
-
             <Newsletter></Newsletter>
             <FooterTop></FooterTop>
 

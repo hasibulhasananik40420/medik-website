@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <div>
             <div className='shadow-md w-full fixed top-0 left-0 z-20'>
-                <div className='md:flex items-center justify-between bg-[#eefff7] text-[#171c26] py-4 md:px-10 px-7'>
+                <div className='md:flex items-center justify-between bg-[#eefff7]  text-[#171c26] py-4 md:px-10 px-7'>
                     <div className=' font-bold text-2xl cursor-pointer font-[Poppins] 
 text-white'>
                         <span className='flex items-center text-2xl  text-[#009e66] mr-1 pt-2'>
@@ -38,41 +38,49 @@ text-white'>
 
 
 
-                    <ul onClick={() => setOpen(!open)} className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#00459e] md:bg-[#eefff7] md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-16 ' : 'top-[-490px]'}`}>
 
 
-                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
-                            <Link to='/' className='  md:border-0 hover:text-gray-400 duration-500'>Home</Link>
+                    <ul onClick={() => setOpen(!open)} className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#eefff7] text-black  md:text-black md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-4 pr-6 transition-all duration-500 ease-in ${open ? 'top-16 ' : 'top-[-490px]'}`}>
+
+
+                        <li>
+                            <Link to='/' className='md:ml-8 text-xl md:my-0 my-7 md:pb-0 hover:bg-black hover:py-1 hover:px-4 hover:text-white hover:rounded-md hover:duration-500 cursor-pointer block'>Home</Link>
                         </li>
 
-                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
-                            <Link to='/appointment' className=' hover:text-gray-400 duration-500'>Appointment</Link>
+                        {user && <li>
+                            <Link to='/dashboard' className='md:ml-8 text-xl md:my-0 my-7 md:pb-0 hover:bg-black hover:py-1 hover:px-4 hover:text-white hover:rounded-md hover:duration-500 cursor-pointer block'>Dashboard</Link>
+                        </li>}
+
+                        <li>
+                            <Link to='/appointment' className='md:ml-8 text-xl md:my-0 my-7 md:pb-0 hover:bg-black hover:py-1 hover:px-4 hover:text-white hover:rounded-md hover:duration-500 cursor-pointer block'>Appointment</Link>
                         </li>
 
-                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
-                            <Link to='/about' className=' hover:text-gray-400 duration-500'>About</Link>
+                        <li>
+                            <Link to='/blog' className='md:ml-8 text-xl md:my-0 my-7 md:pb-0 hover:bg-black hover:py-1 hover:px-4 hover:text-white hover:rounded-md hover:duration-500 cursor-pointer block'>Blog
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/about' className='md:ml-8 text-xl md:my-0 my-7 md:pb-0 hover:bg-black hover:py-1 hover:px-4 hover:text-white hover:rounded-md hover:duration-500 cursor-pointer block'>About
+
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/contact' className='md:ml-8 text-xl md:my-0 my-7 md:pb-0 hover:bg-black hover:py-1 hover:px-4 hover:text-white hover:rounded-md hover:duration-500 cursor-pointer block'>Contact
+
+                            </Link>
                         </li>
 
-
-
-
-
-                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
-                            <Link to='/blog' className=' hover:text-gray-400 duration-500'>Blog</Link>
-                        </li>
-                        <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
-                            <Link to='/contact' className=' hover:text-gray-400 duration-500'>Contact</Link>
-                        </li>
 
                         {
-                            user ? <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
-                                <button onClick={handleSingOut} className=' hover:text-gray-400 duration-500'>Singout</button>
+                            user ? <li>
+                                <button onClick={handleSingOut} className='md:ml-8 text-xl md:my-0 my-7 md:pb-0 hover:bg-black hover:py-1  hover:px-4 hover:text-white hover:rounded-md hover:duration-500 cursor-pointer block'>Singout</button>
                             </li> :
-                                <li className='md:ml-8 text-xl md:my-0 my-7 border-b border-b-[#009e66] md:border-0 pb-2 md:pb-0 font-san'>
-                                    <Link to='/login' className=' hover:text-gray-400 duration-500'>Login</Link>
+                                <li >
+                                    <Link to='/login' className='md:ml-8 text-xl md:my-0 my-7 md:pb-0 hover:bg-black hover:py-1 hover:px-4 hover:text-white hover:rounded-md hover:duration-500 cursor-pointer block'>Login</Link>
                                 </li>
 
                         }
+
 
 
 

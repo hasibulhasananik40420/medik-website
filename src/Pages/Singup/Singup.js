@@ -4,6 +4,7 @@ import auth from '../../Firebase.init';
 import { useForm } from 'react-hook-form';
 import Loading from '../../Components/Loading/Loading';
 import { useLocation, useNavigate } from 'react-router-dom';
+import useToken from '../../hooks/useToken';
 
 
 const Singup = () => {
@@ -13,6 +14,7 @@ const Singup = () => {
     const { register, formState: { errors }, watch, handleSubmit } = useForm();
     const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth);
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+    const [token] = useToken(user || googleUser)
     const navigate = useNavigate()
     const location = useLocation()
 
@@ -35,7 +37,7 @@ const Singup = () => {
         errorMessage = <p className='text-red-500 font-serif'> {error?.message || googleError?.message || updateError.message}</p>
     }
 
-    if (user || googleUser) {
+    if (token) {
         console.log(user);
         // navigate('/')
         navigate(from, { replace: true })
