@@ -2,20 +2,20 @@ import React from 'react';
 
 const HeaderCaed = () => {
     return (
-        <div className='mx-8 bg-white mt-[-50px] relative'>
+        <div className='mx-8 bg-white rounded mt-[-50px] relative'>
 
             <div className='shadow-lg rounded pb-8'>
 
-                <p className='text-[#5ab88a] pl-8 mt-8 text-xl'>Benifits</p>
+                <p className='text-[#5ab88a] pl-8 mt-8 text-xl pt-2 font-mons'>Benifits</p>
 
                 <div className='pl-8 lg:flex gap-32'>
                     <div>
-                        <h1 className='lg:text-4xl text-2xl font-bold mt-6 mb-2 text-[#171c26]'>Best Benefits</h1>
-                        <h1 className='lg:text-4xl text-2xl text-[#171c26]'>With Kivicare</h1></div>
+                        <h1 className='lg:text-4xl text-2xl font-bold mt-6 mb-2 text-[#171c26] font-mons'>Best Benefits</h1>
+                        <h1 className='lg:text-4xl text-2xl text-[#171c26] font-mons'>With Kivicare</h1></div>
 
                     <div className='mt-8 text-[#6e7990]'>
-                        <p>It is a long established fact that a reader will be distracted by the </p>
-                        <p>readable content of a page when looking at its </p>
+                        <p className='font-mons'>It is a long established fact that a reader will be distracted by the </p>
+                        <p className='font-mons'>readable content of a page when looking at its </p>
                     </div>
                 </div>
 

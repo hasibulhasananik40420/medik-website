@@ -19,6 +19,7 @@ import MyReviews from './Pages/DashBoard/MyReviews';
 import AllUsers from './Pages/DashBoard/AllUsers';
 import AddDocters from './Pages/DashBoard/AddDocters';
 import ManageDocter from './Pages/DashBoard/ManageDocter';
+import Payment from './Pages/DashBoard/Payment'
 function App() {
   return (
     <div className='mt-16'>
@@ -45,6 +46,7 @@ function App() {
         <Route path='/dashboard' element={<RequireAuth><DashBoard /></RequireAuth>}>
           <Route index element={<MyAppointment />}></Route>
           <Route path='review' element={<MyReviews />}></Route>
+          <Route path='payment/:id' element={<Payment />}></Route>
           <Route path='allusers' element={<AllUsers />}></Route>
           <Route path='adddocter' element={<AddDocters />}></Route>
           <Route path='managedocter' element={<ManageDocter />}></Route>

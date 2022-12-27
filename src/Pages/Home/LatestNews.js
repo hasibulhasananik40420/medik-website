@@ -4,7 +4,7 @@ const LatestNews = () => {
     return (
         <div className=''>
 
-            <h1 className='md:text-5xl text-2xl font-sans font-semibold text-center mt-24'>Read Our Latest News And Advices
+            <h1 className='md:text-5xl text-2xl font-mons font-semibold text-center mt-24'>Read Our Latest News And Advices
             </h1>
             <p className='mt-4 text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 

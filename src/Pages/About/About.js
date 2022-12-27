@@ -6,7 +6,6 @@ import {
     AccordionPanel,
     AccordionIcon,
 } from '@chakra-ui/react'
-// import { Box } from 'react-icons/bs';
 
 import { FaFacebookF } from 'react-icons/fa';
 import { AiOutlineGoogle, AiOutlineTwitter } from 'react-icons/ai';
@@ -25,7 +24,8 @@ const About = () => {
                     <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                         <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                             <div class="md:5/12 lg:w-5/12">
-                                <img src="https://medik.wpengine.com/wp-content/uploads/2019/07/about.jpg" alt="image" />
+
+                                <img src="https://medik.wpengine.com/wp-content/uploads/2019/07/about.jpg" alt="" />
                             </div>
                             <div class="md:7/12 lg:w-6/12">
                                 <h2 class="text-2xl text-gray-900 font-bold md:text-4xl ">The Best Infrastructure</h2>
@@ -249,15 +249,7 @@ const About = () => {
                         </h1>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {/* <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <div class="mb-8">
-                                <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
-                            </div>
-                            <div class="text-center">
-                                <p class="text-xl text-white font-bold mb-2">Dany Bailey</p>
-                                <p class="text-base text-gray-400 font-normal">Software Engineer</p>
-                            </div>
-                        </div> */}
+
 
                         <div className="single-team">
                             <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
@@ -266,13 +258,13 @@ const About = () => {
                                 <p>Gynecologist </p>
                                 <div className="flex gap-3 justify-center mt-4">
                                     <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <FaFacebookF></FaFacebookF></span>
-                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'><AiOutlineTwitter></AiOutlineTwitter></span>
+                                    <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex '><AiOutlineTwitter></AiOutlineTwitter></span>
                                     <span className='w-8 h-8 bg-[#5ab88a] rounded-sm text-xl flex justify-center items-center'> <AiOutlineGoogle></AiOutlineGoogle></span>
 
                                 </div>
                             </div>
                         </div> <div className="single-team">
-                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <img src="https://media.istockphoto.com/id/92347287/photo/portrait-of-a-doctor.jpg?b=1&s=170667a&w=0&k=20&c=Iayz1ePJVb14L3T3n-JIZQYfRgSLlGODvueJVTVKEWU=" alt="" />
                             <div className="team-text">
                                 <h3>Hasibul Hasan</h3>
                                 <p>Gynecologist </p>
@@ -284,7 +276,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div> <div className="single-team">
-                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9jdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                             <div className="team-text">
                                 <h3>Hasibul Hasan</h3>
                                 <p>Gynecologist </p>
@@ -296,7 +288,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div> <div className="single-team">
-                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZG9jdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                             <div className="team-text">
                                 <h3>Hasibul Hasan</h3>
                                 <p>Gynecologist </p>
@@ -308,7 +300,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div> <div className="single-team">
-                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <img src="https://plus.unsplash.com/premium_photo-1661766569022-1b7f918ac3f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRvY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                             <div className="team-text">
                                 <h3>Hasibul Hasan</h3>
                                 <p>Gynecologist </p>
@@ -320,7 +312,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div> <div className="single-team">
-                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGRvY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                             <div className="team-text">
                                 <h3>Hasibul Hasan</h3>
                                 <p>Gynecologist </p>
@@ -332,7 +324,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div> <div className="single-team">
-                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGRvY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                             <div className="team-text">
                                 <h3>Hasibul Hasan</h3>
                                 <p>Gynecologist </p>
@@ -344,7 +336,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div> <div className="single-team">
-                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <img src="https://images.unsplash.com/photo-1622253694238-3b22139576c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGRvY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                             <div className="team-text">
                                 <h3>Hasibul Hasan</h3>
                                 <p>Gynecologist </p>
@@ -356,7 +348,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div> <div className="single-team">
-                            <img src="https://wordpress.iqonic.design/product/wp/kivicare/wp-content/uploads/2020/10/3-3.jpg" alt="" />
+                            <img src="https://images.unsplash.com/photo-1618498082410-b4aa22193b38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fGRvY3RvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
                             <div className="team-text">
                                 <h3>Hasibul Hasan</h3>
                                 <p>Gynecologist </p>
@@ -370,52 +362,7 @@ const About = () => {
                         </div>
 
 
-                        {/* 
-                        <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <div class="mb-8">
-                                <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
-                            </div>
-                            <div class="text-center">
-                                <p class="text-xl text-white font-bold mb-2">Lucy Carter</p>
-                                <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
-                            </div>
-                        </div>
-                        <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <div class="mb-8">
-                                <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo" />
-                            </div>
-                            <div class="text-center">
-                                <p class="text-xl text-white font-bold mb-2">Jade Bradley</p>
-                                <p class="text-base text-gray-400 font-normal">Dev Ops</p>
-                            </div>
-                        </div>
-                        <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <div class="mb-8">
-                                <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
-                            </div>
-                            <div class="text-center">
-                                <p class="text-xl text-white font-bold mb-2">Dany Bailey</p>
-                                <p class="text-base text-gray-400 font-normal">Software Engineer</p>
-                            </div>
-                        </div>
-                        <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <div class="mb-8">
-                                <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
-                            </div>
-                            <div class="text-center">
-                                <p class="text-xl text-white font-bold mb-2">Lucy Carter</p>
-                                <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
-                            </div>
-                        </div>
-                        <div class="w-full bg-gray-900 rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center">
-                            <div class="mb-8">
-                                <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo" />
-                            </div>
-                            <div class="text-center">
-                                <p class="text-xl text-white font-bold mb-2">Jade Bradley</p>
-                                <p class="text-base text-gray-400 font-normal">Dev Ops</p>
-                            </div>
-                        </div> */}
+
                     </div>
                 </section>
             </div>

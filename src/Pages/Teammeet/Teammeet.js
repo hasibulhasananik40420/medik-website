@@ -7,7 +7,7 @@ const Teammeet = () => {
     return (
         <div className='mt-24'>
             <div className=' bg-[#eefff7] lg:h-[100vh] pt-8'>
-                <h1 className='lg:text-5xl text-2xl font-bold text-center'>Our Outstanding <span className='font-normal'>Doctors</span>
+                <h1 className='lg:text-5xl text-2xl font-bold text-center font-mons'>Our Outstanding <span className='font-normal'>Doctors</span>
                 </h1>
                 <div className='team-area flex flex-wrap justify-center gap-16 mt-16'>
                     <div className="single-team">

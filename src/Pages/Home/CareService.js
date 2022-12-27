@@ -11,11 +11,11 @@ const CareService = () => {
 
 
                     <div className='lg:w-2/4'>
-                        <p className='text-[#5ab88a]'>SERVICES</p>
+                        <p className='text-[#5ab88a] font-mons'>SERVICES</p>
                         <h1 className='lg:text-5xl text-2xl font-semibold mt-4'>We Provide Friendly And Useful <span className='font-normal'>Medical Services.</span>
                         </h1>
 
-                        <p className='mt-6 text-[#6e7990]'>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.le content of a page when looking at its layout.
+                        <p className='mt-6 text-[#6e7990] font-mons'>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.le content of a page when looking at its layout.
 
                         </p>
 

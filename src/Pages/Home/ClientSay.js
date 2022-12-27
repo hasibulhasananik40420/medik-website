@@ -4,8 +4,8 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 const ClientSay = () => {
     return (
         <div className='h-[100vh] bg-[#8ed1fc]'>
-            <h1 className='pt-24 text-4xl font-semibold font-sans text-center'>Our Client Say!</h1>
-            <p className='text-xl mt-4 text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h1 className='pt-24 text-4xl font-semibold font-sans text-center font-mons'>Our Client Say!</h1>
+            <p className='text-xl mt-4 text-center font-mons'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 
 
 

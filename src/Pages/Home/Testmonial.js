@@ -14,7 +14,7 @@ const Testmonial = () => {
 
                 <div className='lg:w-2/4'>
 
-                    <h1 className='lg:text-5xl text-2xl font-bold text-white'>What Our <span className='font-normal'>Patients Says</span>
+                    <h1 className='lg:text-5xl text-2xl font-bold text-white font-mons'>What Our <span className='font-normal font-mons'>Patients Says</span>
                     </h1>
                     <p className='text-white mt-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, expedita eos enim commodi, rerum magnam perferendis accusantium qui obcaecati quasi libero sapiente eveniet ratione! Praesentium iure libero error quas consequatur?</p>
 

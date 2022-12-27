@@ -56,13 +56,7 @@ const Service = ({ service, date, refetch, }) => {
                 console.log(data);
 
                 if (data.success) {
-                    // Swal.fire({
-                    //     position: 'top-center',
-                    //     icon: 'success',
-                    //     title: `Appoitnment is set ,${formatedDate} at ${slot}`,
-                    //     showConfirmButton: false,
-                    //     timer: 2000
-                    // })
+
 
                     Swal.fire({
                         icon: 'success',

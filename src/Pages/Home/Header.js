@@ -6,14 +6,14 @@ const Header = () => {
             <div className='bg-gray-50 relative'>
                 <div className='lg:ml-20 ml-8'>
 
-                    <div className='lg:flex lg:justify-between gap-8 pt-24 '>
+                    <div className='lg:flex lg:justify-between gap-8 lg:pt-24  pt-12'>
                         <div className='lg:w-2/4'>
-                            <h1 className='lg:text-6xl text-2xl font-semibold'>Eye Care Services </h1>
-                            <h1 className='lg:text-6xl text-2xl mt-2'>That You <span className='text-[#5ab88a]'>Can Trust</span></h1>
-                            <p className='mt-6 text-gray-500'>It is a long established fact that a reader will be distracted by the </p>
-                            <p className='text-gray-500'>readable content of a page when looking at its .</p>
+                            <h1 className='lg:text-6xl text-2xl font-semibold font-mons'>Eye Care Services </h1>
+                            <h1 className='lg:text-6xl text-2xl mt-2 font-mons'>That You <span className='text-[#5ab88a]'>Can Trust</span></h1>
+                            <p className='mt-6 text-gray-500 font-mons'>It is a long established fact that a reader will be distracted by the </p>
+                            <p className='text-gray-500 font-mons'>readable content of a page when looking at its .</p>
 
-                            <button className='bg-[#5ab88a] px-6 py-3 text-white font-semibold rounded mt-8 hover:bg-[#171c26] duration-300 hover:scale-105'>Get Appointment</button>
+                            <button className='bg-[#5ab88a] px-6 py-3 text-white font-semibold rounded mt-8 font-mons hover:bg-[#171c26] duration-300 hover:scale-105'>Get Appointment</button>
 
 
 
