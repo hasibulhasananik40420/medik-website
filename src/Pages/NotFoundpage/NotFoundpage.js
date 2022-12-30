@@ -2,6 +2,7 @@ import React from 'react';
 import { AiOutlineHome } from 'react-icons/ai';
 import { BsArchive } from 'react-icons/bs';
 import { MdContactPage, MdContactPhone, MdImportContacts } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const NotFoundpage = () => {
     return (
@@ -50,9 +51,9 @@ const NotFoundpage = () => {
                                 </div>
 
                                 <div class="grow flex flex-col pl-5 pt-2">
-                                    <div class="font-bold text-sm md:text-lg lg:text-xl group-hover:underline">
+                                    <Link to='/' class="font-bold text-sm md:text-lg lg:text-xl group-hover:underline">
                                         Home Page
-                                    </div>
+                                    </Link>
 
                                     <div class="font-semibold text-sm md:text-md lg:text-lg
                             text-gray-400 group-hover:text-gray-500

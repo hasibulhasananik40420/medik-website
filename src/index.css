@@ -22,6 +22,13 @@ body {
 }
 
 
+.back-img {
+  background-image: url("./images/Group4.webp");
+  background-repeat: repeat;
+  /* background-repeat: repeat-y; */
+  object-fit: cover;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

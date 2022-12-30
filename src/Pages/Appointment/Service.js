@@ -129,7 +129,7 @@ const Service = ({ service, date, refetch, }) => {
             </Modal>
 
 
-            {/* 72/7 */}
+
 
 
         </div>

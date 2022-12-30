@@ -1,6 +1,5 @@
 import { format } from 'date-fns';
 import React from 'react';
-import { useEffect } from 'react';
 import { useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../../Components/Loading/Loading';
@@ -19,6 +18,8 @@ const AvailableAppointment = ({ date }) => {
     if (isLoading) {
         return <Loading />
     }
+
+    //http://localhost:5000
 
     // useEffect(() => {
     //     fetch(`http://localhost:5000/available?date=${formatedDate}`)
