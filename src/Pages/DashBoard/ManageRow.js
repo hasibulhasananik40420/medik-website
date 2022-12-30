@@ -21,7 +21,7 @@ const ManageRow = ({ docter, index, refetch }) => {
             if (result.isConfirmed) {
 
 
-                fetch(`http://localhost:5000/doctor/${email}`, {
+                fetch(`https://medik-website-server-host.onrender.com/doctor/${email}`, {
                     method: 'DELETE',
                     headers: {
                         'content-type': 'application/json',

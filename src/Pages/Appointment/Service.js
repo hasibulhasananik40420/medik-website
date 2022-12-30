@@ -43,7 +43,7 @@ const Service = ({ service, date, refetch, }) => {
             phone: e.target.phone.value
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://medik-website-server-host.onrender.com/booking', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"

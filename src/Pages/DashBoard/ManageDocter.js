@@ -5,7 +5,7 @@ import ManageRow from './ManageRow';
 
 const ManageDocter = () => {
 
-    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('http://localhost:5000/doctors', {
+    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('https://medik-website-server-host.onrender.com/doctors', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

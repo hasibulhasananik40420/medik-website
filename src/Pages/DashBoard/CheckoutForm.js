@@ -15,7 +15,7 @@ const CheckoutForm = ({ appointment }) => {
     const [clientSecret, setClientSecret] = useState('')
 
     useEffect(() => {
-        fetch(`http://localhost:5000/create-payment-intent`, {
+        fetch(`https://medik-website-server-host.onrender.com/create-payment-intent`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -84,7 +84,7 @@ const CheckoutForm = ({ appointment }) => {
                 appointment: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`http://localhost:5000/bookings/${_id}`, {
+            fetch(`https://medik-website-server-host.onrender.com/bookings/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

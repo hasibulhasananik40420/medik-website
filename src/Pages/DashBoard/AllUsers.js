@@ -5,7 +5,7 @@ import User from './User';
 
 const AllUsers = () => {
 
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://medik-website-server-host.onrender.com/user', {
         method: 'GET',
 
         headers: {

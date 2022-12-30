@@ -11,7 +11,7 @@ const stripePromise = loadStripe('pk_test_51L3O63A075wgahMPXUKqu3rlTdQ90cYSLsDuK
 
 const Payment = () => {
     const { id } = useParams()
-    const url = `http://localhost:5000/booking/${id}`
+    const url = `https://medik-website-server-host.onrender.com/booking/${id}`
     const { data: appointment, isLoading } = useQuery(['booking', id], () => fetch(url, {
         method: 'GET',
         headers: {

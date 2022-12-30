@@ -10,7 +10,7 @@ const AvailableAppointment = ({ date }) => {
     const formatedDate = format(date, 'PP')
     // console.log(services);
     const { data: services, isLoading, refetch } = useQuery(['available', formatedDate], () =>
-        fetch(`http://localhost:5000/available?date=${formatedDate}`)
+        fetch(`https://medik-website-server-host.onrender.com/available?date=${formatedDate}`)
             .then(res => res.json())
     )
     console.log(services);
@@ -19,10 +19,10 @@ const AvailableAppointment = ({ date }) => {
         return <Loading />
     }
 
-    //http://localhost:5000
+    //https://medik-website-server-host.onrender.com
 
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/available?date=${formatedDate}`)
+    //     fetch(`https://medik-website-server-host.onrender.com/available?date=${formatedDate}`)
     //         .then(res => res.json())
     //         .then(data => setServices(data))
     // }, [formatedDate])
