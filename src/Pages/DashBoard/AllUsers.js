@@ -5,7 +5,7 @@ import User from './User';
 
 const AllUsers = () => {
 
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://medik-website-server-host.onrender.com/user', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://medical-website-server.vercel.app/user', {
         method: 'GET',
 
         headers: {

@@ -43,7 +43,7 @@ const Service = ({ service, date, refetch, }) => {
             phone: e.target.phone.value
         }
 
-        fetch('https://medik-website-server-host.onrender.com/booking', {
+        fetch('https://medical-website-server.vercel.app/booking', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"

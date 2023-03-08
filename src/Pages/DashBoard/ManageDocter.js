@@ -5,7 +5,7 @@ import ManageRow from './ManageRow';
 
 const ManageDocter = () => {
 
-    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('https://medik-website-server-host.onrender.com/doctors', {
+    const { data: doctors, isLoading, refetch } = useQuery('doctors', () => fetch('https://medical-website-server.vercel.app/doctors', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

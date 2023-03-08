@@ -7,7 +7,7 @@ const useAdmin = (user) => {
         const email = user?.email
 
         if (email) {
-            fetch(`https://medik-website-server-host.onrender.com/admin/${email}`, {
+            fetch(`https://medical-website-server.vercel.app/admin/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',

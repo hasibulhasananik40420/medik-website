@@ -7,7 +7,7 @@ import Swal from 'sweetalert2'
 const AddDocters = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('https://medik-website-server-host.onrender.com/service').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch('https://medical-website-server.vercel.app/service').then(res => res.json()))
 
     const imageStrogeKey = '3c1f06e572f598cefb6cae407a422a8b'
 
@@ -35,7 +35,7 @@ const AddDocters = () => {
                         img: img
                     }
 
-                    fetch('https://medik-website-server-host.onrender.com/docter', {
+                    fetch('https://medical-website-server.vercel.app/docter', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

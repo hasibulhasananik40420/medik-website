@@ -15,7 +15,7 @@ const MyAppointment = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://medik-website-server-host.onrender.com/bookings?patient=${user?.email}`, {
+            fetch(`https://medical-website-server.vercel.app/bookings?patient=${user?.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': ` Bearer ${localStorage.getItem('accessToken')}`

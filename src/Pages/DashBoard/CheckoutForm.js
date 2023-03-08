@@ -14,8 +14,11 @@ const CheckoutForm = ({ appointment }) => {
     const [transactionId, setTransactionId] = useState('')
     const [clientSecret, setClientSecret] = useState('')
 
+    //https://medical-website-server.vercel.app
+
+
     useEffect(() => {
-        fetch(`https://medik-website-server-host.onrender.com/create-payment-intent`, {
+        fetch(`https://medical-website-server.vercel.app/create-payment-intent`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -84,7 +87,7 @@ const CheckoutForm = ({ appointment }) => {
                 appointment: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://medik-website-server-host.onrender.com/bookings/${_id}`, {
+            fetch(`https://medical-website-server.vercel.app/bookings/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

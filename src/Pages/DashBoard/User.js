@@ -5,7 +5,7 @@ const User = ({ user, refetch }) => {
     const { email, role } = user
 
     const makeAdmin = () => {
-        fetch(`https://medik-website-server-host.onrender.com/user/admin/${email}`, {
+        fetch(`https://medical-website-server.vercel.app/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

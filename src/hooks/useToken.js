@@ -9,7 +9,7 @@ const useToken = (user) => {
         const currentUser = { email: email }
 
         if (email) {
-            fetch(`https://medik-website-server-host.onrender.com/user/${email}`, {
+            fetch(`https://medical-website-server.vercel.app/user/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
